@@ -42,7 +42,7 @@ void bubble_sort2(int *a,int length)
     int k;
     while(low < high)
     {
-        for(k = low; k < length; ++k)
+        for(k = low; k < high; ++k)
         {
             if(a[k] > a[k+1])
             {
@@ -50,7 +50,7 @@ void bubble_sort2(int *a,int length)
             }
         }
         ++low;
-        for(k = high; k > 0; --k)
+        for(k = high; k > low; --k)
         {
             if(a[k] < a[k-1])
             {
